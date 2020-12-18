@@ -23,7 +23,7 @@ public class UsuarioController {
 		lista = (ArrayList<Usuario>)dao.findAll();
 		return lista;
 	}*/
-	@PostMapping("/login")
+	@PostMapping("/Login")
 	public ResponseEntity<Usuario> testandoUsuario(@RequestBody Usuario dadosLogin) {
 		/*  passo 1 - recuperar usuario por email ou racf
 		 *  passo 2 - se o usuario nao exisitir, retorno codigo 404 (Not found)
